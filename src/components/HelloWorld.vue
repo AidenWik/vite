@@ -1,12 +1,4 @@
-<script setup>
-import { ref } from 'vue'
 
-defineProps({
-  msg: String,
-})
-
-const count = ref(0)
-</script>
 
 <template>
  <head>
@@ -226,6 +218,17 @@ src="https://gofericecream.com/wp-content/uploads/2021/06/shake-.png">
         }
 </style>
 <script>
+
+
+import { ref } from 'vue'
+
+defineProps({
+  msg: String,
+})
+
+const count = ref(0)
+
+
    document.querySelector('#title').addEventListener('click', (e) => {
   const headings = document.querySelectorAll('.sheetzLbl'); // Corrected class name
   headings.forEach((heading) => {
@@ -235,8 +238,7 @@ src="https://gofericecream.com/wp-content/uploads/2021/06/shake-.png">
 
 
 
-  </script>
-    <script> document.querySelector('#deleteLastCard').addEventListener('click', (e) => {
+ document.querySelector('#deleteLastCard').addEventListener('click', (e) => {
       // Code for deleting the last card
       const cardContainer = document.querySelector('.card-container');
       const cardWrappers = document.querySelectorAll('.card-wrapper');
@@ -247,22 +249,17 @@ src="https://gofericecream.com/wp-content/uploads/2021/06/shake-.png">
           cardContainer.removeChild(lastCard);
       }
   });
-</script>
 
-<script>
 document.querySelector('.card-wrapper').addEventListener('mouseover', (e) => {
 const cardWrapper = document.querySelector('.card-wrapper');
   cardWrapper.classList.toggle('alt-bg2');
 });
-</script>
 
-<script>
 document.querySelector('.card-wrapper').addEventListener('mouseleave', (e) => {
 const cardWrapper = document.querySelector('.card-wrapper');
   cardWrapper.classList.toggle('alt-bg2');
 });
-</script>
-<script> document.querySelector('#background').addEventListener('click', (e) => {
+ document.querySelector('#background').addEventListener('click', (e) => {
   const cardWrappers = document.querySelectorAll('.card-wrapper');
   /* loop to change each existing iteration*/
   cardWrappers.forEach((cardWrapper) => {
@@ -270,8 +267,7 @@ const cardWrapper = document.querySelector('.card-wrapper');
   });
 });
 
-</script>
-<script>
+
     // JavaScript to toggle visibility of the paragraph descriptions
     const toggleDetailsButtons = document.querySelectorAll('.toggle-details');
     const paragraphsSections = document.querySelectorAll('.paragraphs');
@@ -281,9 +277,7 @@ const cardWrapper = document.querySelector('.card-wrapper');
         paragraphsSections[index].classList.toggle('hidden');
       });
     });
-  </script>
 
-  <script>
     // JavaScript for cloning cards
     document.querySelector('#duper').addEventListener('click', (e) => {
       const cardContainer = document.querySelector('.card-container');

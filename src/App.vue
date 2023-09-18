@@ -1,6 +1,4 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
+
 
 <template>
  <head>
@@ -220,7 +218,10 @@ color: blue;
           display: none;
       }
 </style>
-<script>
+<script setup>
+import HelloWorld from './components/HelloWorld.vue'
+
+
     // JavaScript to toggle visibility of the paragraph descriptions
     const toggleDetailsButtons = document.querySelectorAll('.toggle-details');
     const paragraphsSections = document.querySelectorAll('.paragraphs');
@@ -230,9 +231,7 @@ color: blue;
         paragraphsSections[index].classList.toggle('hidden');
       });
     });
-  </script>
 
-  <script>
     // JavaScript for cloning cards
     document.querySelector('#duper').addEventListener('click', (e) => {
       const cardContainer = document.querySelector('.card-container');
@@ -252,8 +251,7 @@ color: blue;
         clonedParagraphsSection.classList.toggle('hidden');
       });
     });
-  </script>
-  <script> document.querySelector('#deleteLastCard').addEventListener('click', (e) => {
+document.querySelector('#deleteLastCard').addEventListener('click', (e) => {
     // Code for deleting the last card
     const cardContainer = document.querySelector('.card-container');
     const cardWrappers = document.querySelectorAll('.card-wrapper');
@@ -264,22 +262,17 @@ color: blue;
         cardContainer.removeChild(lastCard);
     }
 });
-</script>
 
-<script>
 document.querySelector('.card-wrapper').addEventListener('mouseover', (e) => {
 const cardWrapper = document.querySelector('.card-wrapper');
 cardWrapper.classList.toggle('alt-bg2');
 });
-</script>
 
-<script>
 document.querySelector('.card-wrapper').addEventListener('mouseleave', (e) => {
 const cardWrapper = document.querySelector('.card-wrapper');
 cardWrapper.classList.toggle('alt-bg2');
 });
-</script>
-<script>
+
 document.querySelector('#title').addEventListener('click', (e) => {
 const headings = document.querySelectorAll('.sheetzLbl'); // Corrected class name
 headings.forEach((heading) => {
@@ -289,13 +282,13 @@ headings.forEach((heading) => {
 
 
 
-</script>
-<script> document.querySelector('#background').addEventListener('click', (e) => {
+ document.querySelector('#background').addEventListener('click', (e) => {
   const cardWrappers = document.querySelectorAll('.card-wrapper');
   /* loop to change each existing iteration*/
   cardWrappers.forEach((cardWrapper) => {
       cardWrapper.classList.toggle('alt-bg');
   });
 });
+
 
 </script>

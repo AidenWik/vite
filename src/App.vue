@@ -218,10 +218,7 @@ color: blue;
           display: none;
       }
 </style>
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-
-
+<script>
     // JavaScript to toggle visibility of the paragraph descriptions
     const toggleDetailsButtons = document.querySelectorAll('.toggle-details');
     const paragraphsSections = document.querySelectorAll('.paragraphs');
